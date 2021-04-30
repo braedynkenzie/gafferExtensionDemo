@@ -39,6 +39,8 @@ install( TARGETS DemoGafferExtensionModule DESTINATION python/DemoGafferExtensio
 # build the python modules
 file( GLOB DemoGafferExtensionModuleFiles python/DemoGafferExtension/*.py )
 install( FILES ${DemoGafferExtensionModuleFiles} DESTINATION python/DemoGafferExtension )
+file( GLOB TaskAlgoTestModuleFiles python/TaskAlgoTest/*.py )
+install( FILES ${TaskAlgoTestModuleFiles} DESTINATION python/TaskAlgoTest )
 file( GLOB DemoGafferExtensionTestModuleFiles python/DemoGafferExtensionTest/*.py )
 install( FILES ${DemoGafferExtensionTestModuleFiles} DESTINATION python/DemoGafferExtensionTest )
 file( GLOB DemoGafferExtensionUIModuleFiles python/DemoGafferExtensionUI/*.py )
